@@ -1,4 +1,4 @@
-# [publicscience.co](publicscience.co)
+# [publicscience.co](http://publicscience.co)
 
 dev workflow:
 - setup: `npm install -d`
