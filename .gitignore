@@ -1,0 +1,10 @@
+sync
+.tags*
+.DS_Store
+*.scssc
+*.sassc
+*.swp
+*.map
+*.html
+!inc/*.html
+node_modules/
