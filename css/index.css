@@ -705,6 +705,10 @@ a:hover {
     font-size: 1.8em;
     font-weight: bold; }
 
+.coordinator {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 0.8em; }
+
 footer {
   font-style: italic;
   color: rgba(0, 0, 0, 0.1); }

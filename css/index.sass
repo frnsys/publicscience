@@ -8,119 +8,122 @@ $selection-color: #fff
 @import 'https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i'
 
 body
-    background: $background-color
-    color: #333
-    font-family: "Rubik", "Helvetica", "Arial", "sans-serif"
+  background: $background-color
+  color: #333
+  font-family: "Rubik", "Helvetica", "Arial", "sans-serif"
 
 main
-    padding: 8em 4em 1em 4em
+  padding: 8em 4em 1em 4em
 
 a
-    @include transition
-    color: #FB586F
-    text-decoration: none
+  @include transition
+  color: #FB586F
+  text-decoration: none
 
 .logo
-    width: 280px
-    margin: 2em 0 1em 0
-    position: fixed
-    top: 0
-    right: 40px
-    z-index: -1
+  width: 280px
+  margin: 2em 0 1em 0
+  position: fixed
+  top: 0
+  right: 40px
+  z-index: -1
 
 h1,h2,h3,h4,h5,h6
-    margin: 0
+  margin: 0
 
 h3,h4,h5,h6
-    font-weight: normal
+  font-weight: normal
 
 h1
-    font-size: 5em
-    font-weight: normal
-    color: #fff
-    line-height: 1
-    text-shadow: 3px 3px 0px #73ACF6
-    word-break: break-all
+  font-size: 5em
+  font-weight: normal
+  color: #fff
+  line-height: 1
+  text-shadow: 3px 3px 0px #73ACF6
+  word-break: break-all
 
 h2
-    font-size: 2.2em
-    font-style: italic
-    color: rgba(255, 255, 255, 0.3)
-    text-shadow: 2px 2px 0 rgb(97, 194, 255)
+  font-size: 2.2em
+  font-style: italic
+  color: rgba(255, 255, 255, 0.3)
+  text-shadow: 2px 2px 0 rgb(97, 194, 255)
 
 a
-    &:hover
-        text-decoration: underline
-        text-decoration-style: wavy
+  &:hover
+    text-decoration: underline
+    text-decoration-style: wavy
 
 .blurb
-    margin: 2em 0
+  margin: 2em 0
 
 .residency
-    margin: 1em 0 2em 0
-    font-family: "Helvetica", "Arial", "sans-serif"
-    li
-        color: #ff3131
-    .authors
-        margin-left: 0.6em
-        a
-            color: #718CC3
-    .project
-        color: rgba(255, 255, 255, 0.6)
-        text-shadow: 2px 2px 1px rgb(83, 188, 255)
-        font-size: 1.8em
-        font-weight: bold
+  margin: 1em 0 2em 0
+  font-family: "Helvetica", "Arial", "sans-serif"
+  li
+    color: #ff3131
+  .authors
+    margin-left: 0.6em
+    a
+      color: #718CC3
+  .project
+    color: rgba(255, 255, 255, 0.6)
+    text-shadow: 2px 2px 1px rgb(83, 188, 255)
+    font-size: 1.8em
+    font-weight: bold
+.coordinator
+  color: rgba(0,0,0,0.3)
+  font-size: 0.8em
 
 footer
-    font-style: italic
+  font-style: italic
+  color: rgba(0,0,0,0.1)
+  a, a:visited
     color: rgba(0,0,0,0.1)
-    a, a:visited
-        color: rgba(0,0,0,0.1)
 
 
 // --- background stuff ---
 
 .background
-    position: fixed
-    top: 0
-    width: 100%
-    height: 100%
-    overflow: hidden
-    z-index: -1
+  position: fixed
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: hidden
+  z-index: -1
 
 .background.bot
-    z-index: -2
+  z-index: -2
 
 .quad
-    position: absolute
-    width: 100%
-    height: 100%
-    background-image: url('/img/stars_top.svg')
-    background-size: 100%
-    animation: move 30s infinite linear
-    // force hardware acceleration?
-    transform: translateZ(0)
+  position: absolute
+  width: 100%
+  height: 100%
+  background-image: url('/img/stars_top.svg')
+  background-size: 100%
+  animation: move 30s infinite linear
+  // force hardware acceleration?
+  transform: translateZ(0)
 
 .bot .quad
-    background-image: url('/img/stars_bot.svg')
-    animation: move 40s infinite linear
+  background-image: url('/img/stars_bot.svg')
+  animation: move 40s infinite linear
 
-    // too cpu intensive
-    //filter: blur(1px)
-    //-webkit-filter: blur(1px)
+  // too cpu intensive
+  //filter: blur(1px)
+  //-webkit-filter: blur(1px)
 
 .quad:nth-child(1)
-    right: 100%
-    bottom: 100%
+  right: 100%
+  bottom: 100%
 
 .quad:nth-child(2)
-    bottom: 100%
+  bottom: 100%
 
 .quad:nth-child(3)
-    right: 100%
+  right: 100%
 
 @keyframes move
-    from
-        transform: translate(  0%, 0%)
-    to
-        transform: translate(100%, 100%)
+  from
+    transform: translate(  0%, 0%)
+  to
+    transform: translate(100%, 100%)
